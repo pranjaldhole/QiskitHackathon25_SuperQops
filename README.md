@@ -1,10 +1,10 @@
-# QiskitHackathon25 
+# Qiskit Hackathon 2025 
 
-Hackathon problem for World of Quantum Qiskit Hackathon
+Qubit routing optimization task for World of Quantum Qiskit Hackathon 2025
 
 ## Team: SuperQops
 
-** Members**
+**Members**
 
 - Pranjal Dhole
 - Hruday Divakaran
