@@ -7,6 +7,9 @@ Author: Pranjal Dhole
 E-mail: dhole.pranjal@gmail.com
 '''
 
+import rustworkx as rx
+import numpy as np
+
 def get_qubit_noise_from_backend(backend):
     """
     Parameter: backend
@@ -40,3 +43,20 @@ def get_qubit_noise_from_backend(backend):
                     two_q_error_map[qargs] = max(two_q_error_map.get(qargs, 0), inst_props.error)
     return Noise_dict, two_q_error_map
 
+def get_coupling_map_from_backend(backend):
+    graph = rx.PyDiGraph()
+    backend.num_qubits
+    graph.add_nodes_from(np.arange(0, backend.num_qubits, 1))
+    two_qubit_gate='ecr'
+    graph.add_edges_from(
+        [
+            (
+                edge[0],
+                edge[1],
+                backend.properties().gate_error(gate=two_qubit_gate, qubits=(edge[0], edge[1]))
+            )
+            for edge in backend.coupling_map
+        ]
+    )
+
+    return graph

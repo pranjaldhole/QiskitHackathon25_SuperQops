@@ -34,3 +34,11 @@ Objective is to write a custom qubit routing algorithm that optimizes the transp
   - The noise profiles of the physical qubits on a device vary. Therefore, Qubit routing is not only an circuit optimization issue but also error propagation issue (higher connectivity of noisy qubits propagate more errors in the circuit).
 - Circuit depth as a proxy
   - Optimization should also account for circuit depth. The longer the transpiled circuit, the more error will propagated through the circuit.
+
+## Installation
+
+- Install the library in the developer version with following command
+
+```bash
+python setup.py develop
+```
