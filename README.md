@@ -20,6 +20,14 @@ Objective is to write a custom qubit routing algorithm that optimizes the transp
 
 - **Use case**: QuBO formulation with VQE solver for Travelling Salesperson Problem.
 
+### Optimization steps
+
+- **Circuit optimization using approximation schema**
+  - Initialize the `isa_circuit` with `TrivialLayout` (level 0 optimization).
+  - Apply an approximation schema to find a minimal-spanning-tree.
+- **Error Suppression on noisy qubits**
+  - We use `PauliTwirling` for suppressing the noise on most noisy qubits in the selected physical qubit mapping.
+
 ## Benchmarking
 
 - Noise estimation at qubit level
