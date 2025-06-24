@@ -37,6 +37,12 @@ Objective is to write a custom qubit routing algorithm that optimizes the transp
 
 ## Installation
 
+- Install package dependencies for the code base
+
+```bash
+uv pip install -r requirements.txt
+```
+
 - Install the library in the developer version with following command
 
 ```bash
