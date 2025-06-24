@@ -37,7 +37,26 @@ Objective is to write a custom qubit routing algorithm that optimizes the transp
 
 ## Installation
 
+- Create virtual environment
+
+```bash
+mkdir .venv
+```
+
+```bash
+uv venv .venv
+```
+
+- Activate the environment
+```bash
+source .venv/bin/activate
+```
+
 - Install package dependencies for the code base
+
+```bash
+uv pip install --upgrade pip setuptools
+```
 
 ```bash
 uv pip install -r requirements.txt
