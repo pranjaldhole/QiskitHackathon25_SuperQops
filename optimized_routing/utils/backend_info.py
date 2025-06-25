@@ -10,6 +10,22 @@ E-mail: dhole.pranjal@gmail.com
 import rustworkx as rx
 import numpy as np
 
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import QiskitRuntimeService
+from optimized_routing.config import SIMULATOR_SEED
+
+def get_backend(backend_name='ibm_brisbane', sim_seed=SIMULATOR_SEED):
+    '''
+    Takes backend name as input and returns the backend
+    '''
+    service = QiskitRuntimeService()
+
+    backend = service.backend(backend_name)
+
+    noisy_fake_backend = AerSimulator.from_backend(backend, seed_simulator=sim_seed)
+
+    return noisy_fake_backend
+
 def get_qubit_noise_from_backend(backend):
     """
     Parameter: backend
