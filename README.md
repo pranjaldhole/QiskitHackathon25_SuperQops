@@ -24,11 +24,11 @@ Objective is to write a custom qubit routing algorithm that optimizes the transp
 
 - **Circuit optimization using approximation schema**
   - Initialize the `isa_circuit` with `TrivialLayout` (level 0 optimization).
-  - Apply an approximation schema to find a minimal-spanning-tree.
+  - Apply the MST approximation schema to find a minimal-spanning-tree with Christofides algorithm that has optimization guarrantees.
 - **Error Suppression on noisy qubits**
   - We use `PauliTwirling` for suppressing the noise on most noisy qubits in the selected physical qubit mapping.
 
-## Benchmarking
+## Notes
 
 - Noise estimation at qubit level
   - The noise profiles of the physical qubits on a device vary. Therefore, Qubit routing is not only an circuit optimization issue but also error propagation issue (higher connectivity of noisy qubits propagate more errors in the circuit).
