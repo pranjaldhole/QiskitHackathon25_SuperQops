@@ -43,7 +43,7 @@ display(IPython.display.Image(dot.pipe(format='png')))
 
 ```
 
-**Our Unique Approach:**
+## **Our Unique Approach:**
 
 In quantum computing, not all qubits are equal—some are significantly noisier than others. At SuperQOps, we leverage this insight by taking a targeted approach rather than applying Pauli twirling uniformly across all two-qubit gates (like CX and ECR). Instead of blindly twirling every gate, we selectively apply twirling only to those acting on the noisiest qubits. This strategy reduces unnecessary overhead, lowering the overall circuit depth while still achieving effective—if not improved—error mitigation. The approach is outlined below:
 
@@ -96,11 +96,11 @@ display(IPython.display.Image(dot.pipe(format='png')))
 
 ```
 
-**What We're Proud Of**
+## **What We're Proud Of**
 
 Using our Modified Pauli Twirling technique, we significantly reduced the number of operations in the circuit—from 2046 (with standard Pauli Twirling) to just 1263. This reduction in gate count is a meaningful step toward more efficient quantum circuits—something we're genuinely excited about!
 
-**Next Steps**
+## **Next Steps**
 
 Due to time constraints, we weren’t able to run full error rate benchmarks. However, we already have a function in place for this analysis. If you're as curious as we are, give it a try—we’re hopeful that the Modified Pauli Twirl will deliver comparable or even better error mitigation performance.
 
