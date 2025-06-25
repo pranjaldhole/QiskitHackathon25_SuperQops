@@ -107,7 +107,6 @@ opentelemetry-proto==1.33.0
 opentelemetry-sdk==1.33.0
 opentelemetry-semantic-conventions==0.54b0
 opentelemetry-util-http==0.54b0
--e git+ssh://git@github.com/pranjaldhole/QiskitHackathon25_SuperQops.git@e8dbb53dac58b93219ea939bd7d12433227762c5#egg=optimized_routing
 overrides==7.7.0
 packaging==25.0
 pandas==2.3.0
