@@ -4,6 +4,9 @@
 
 A **normal Pauli twirling algorithm**, as implemented in the `PauliTwirl` transpiler pass, randomly inserts pairs of Pauli operations around each selected two-qubit gate (such as `CX` or `ECR`) in a quantum circuit. For each such gate, a pair of two-qubit Pauli gates is chosen so that the overall effect on the quantum state is equivalent to applying the original gate alone—this preserves the computation while randomizing the error channels. The algorithm constructs a small subcircuit (a "mini DAG") containing the left Pauli, the original two-qubit gate, and the right Pauli, then substitutes this for the original gate in the circuit's directed acyclic graph (DAG). Over multiple runs, this randomization helps transform coherent errors into stochastic ones, improving their suppressibility through averaging.
 
+![image](https://github.com/user-attachments/assets/48ca9f86-50b5-46f9-8972-4f40650795ae)
+
+
 ```python
 from graphviz import Digraph
 from IPython.display import display
