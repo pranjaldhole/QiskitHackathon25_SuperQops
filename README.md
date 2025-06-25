@@ -15,10 +15,16 @@ Qubit routing optimization task for World of Quantum Qiskit Hackathon 2025
 
 Objective is to write a custom qubit routing algorithm that optimizes the transpiled circuit based on low depth as well as using less noisy qubits to avoid error propagation.
 
-**Project Files:**
+## 📁 Project Files (Permalinks)
 
-- [`notebooks/Pauli_Twirling_Custom_TSP.ipynb`](notebooks/Pauli_Twirling_Custom_TSP.ipynb)  
-- [`notebooks/layout_optimization_with_MST_approximation_schema.ipynb`](notebooks/layout_optimization_with_MST_approximation_schema.ipynb)
+These files are linked to a specific commit for reproducibility:
+
+- [`Pauli_Twirling_General_Customized_TSP.ipynb`](https://github.com/pranjaldhole/QiskitHackathon25_SuperQops/blob/0bb366a84ad0f0dd8c73399ed379fa3b5b4038e9/notebooks/Pauli_Twirling_General_Customized_TSP.ipynb)  
+  *(Location: `notebooks/Pauli_Twirling_General_Customized_TSP.ipynb`)*
+
+- [`layout_optimization_with_MST_approximation_schema.ipynb`](https://github.com/pranjaldhole/QiskitHackathon25_SuperQops/blob/0bb366a84ad0f0dd8c73399ed379fa3b5b4038e9/layout_optimization_with_MST_approximation_schema.ipynb)  
+  *(Location: `layout_optimization_with_MST_approximation_schema.ipynb`)*
+  
 ### Use case
 - **Full Adder Gate**: [FullAdder](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.FullAdderGate)
 
