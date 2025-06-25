@@ -15,6 +15,10 @@ Qubit routing optimization task for World of Quantum Qiskit Hackathon 2025
 
 Objective is to write a custom qubit routing algorithm that optimizes the transpiled circuit based on low depth as well as using less noisy qubits to avoid error propagation.
 
+**Project Files:**
+
+- [`notebooks/Pauli_Twirling_Custom_TSP.ipynb`](notebooks/Pauli_Twirling_Custom_TSP.ipynb)  
+- [`notebooks/layout_optimization_with_MST_approximation_schema.ipynb`](notebooks/layout_optimization_with_MST_approximation_schema.ipynb)
 ### Use case
 - **Full Adder Gate**: [FullAdder](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.FullAdderGate)
 
